@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href="css/bootstrap.css">
+    <link rel='stylesheet' href='css/all.min.css'>
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="fixed-top">
+        <div class="container-fluid">
+            <div class='row'>
+                <div class="col-sm-4">
+                    <div>
+                        <ul class="nav-ul-left">
+                            <li> <span id="opensearch" onclick='opensearch()' class="fas fa-search" style="cursor: pointer;"></span></li>
+                            <li> <a> <i class="fab fa-facebook-f icon"></i></a></li>
+                            <li> <a> <i class="fab fa-twitter icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div style="text-align: center;">
+                        <a href='#'>
+                            <img src='img/Logo.png'>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div style="float: right;">
+                        <ul class='nav-ul-right'>
+                            <li>
+                                <i class="far fa-user"></i>
+
+                            </li>
+                            <li>
+                                <span id='open' style="font-size:30px;cursor:pointer;display: block;"
+                                    onclick="openNav()"> &#9776</span>
+                                <span id='close' style="font-size:30px;cursor:pointer;display: none;"
+                                    onclick="openNav()"> &times</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <div class='links'>
+            <a class='accordion' href="#">المرأه</a>
+            <div class='panel'>
+                <a href='#'>لايف كوتش</a>
+                <a href='#'>موضه</a>
+                <a href="#">مطبخ واسره</a>
+                <a href='#'>تربيه اطفال</a>
+                <a href="#">مشكلات وزجيه</a>
+            </div>
+            <a href="#">رياضه</a>
+            <a href="#">فن و ثقافه</a>
+            <a href="#">اقتصاد و عملات</a>
+            <a href='#'>علوم وتكنولوجيا</a>
+        </div>
+    </div>
+
+    <!-- content-search -->
+    <div id='open-search-content'  class="content-search">
+        <div class="container">
+          <div class='row'>
+            <div class='col-sm-12'>
+                <form>
+                    <span style="font-size: 36px;"  class="fas fa-search"></span>
+                      <input type='text' required placeholder="ابحث فى الموقع ...">
+                      <span  onclick="opensearch()" > &times</span>
+                  </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!--section 1  -->
+    <div class="section1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="section1-left">
+                        <h3>مقَالات لا تُفَوَّت</h3>
+                        <div class="dropdown-divider"></div>
+                        <div class="">
+                            <div class="posts">
+                                <img src='img/l.JPG'>
+                                <div class="post-one">
+                                    <p class="card-title">برمجية خبيثة تتجسس على هواتف أندرويد تحت غطاء تحديث النظام
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">روان دربولي</small></p>
+                                </div>
+                            </div>
+
+                            <div class="posts">
+                                <img src='img/12.jpg'>
+                                <div class="post-one">
+                                    <p class="card-title">أحمد زكي في ذكرى رحيله: بين البرئ والرجل المهم ما هو قابل
+                                        للنقاش
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">منار خالد</small></p>
+                                </div>
+                            </div>
+                            <div class="posts">
+                                <img src='img/13.jpg'>
+                                <div class="post-one">
+                                    <p class="card-title"> ليس بالشكل ولا الجنسية.. لهذه الأسباب المقنعة تم اختيار هند
+                                        صبري لمصاحبة موكب نقل المومياوات
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">عزة عبد الحميد</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6">
+                    <div class='section1-right'>
+                        <a href='#'>
+                            <img src='img/design.png' width="100%">
+                            <article>
+                                <h3>
+                                    <a href=''>
+                                        نساء في الفضاء: في المتحف الفضائي الافتراضي كوزمودريمز
+                                        COSMODREAMS
+                                    </a>
+                                </h3>
+                                <p>
+                                    يتناول مشروع كوزمودريمز COSMODREAMS للسيدة مارينا فيدوروفا يوتوبيا الفضاء. ويعمل
+                                    مشروع كوزمودريمز على عرض وسائط تمثل المرأة في الفضاء، بأسلوب جميل وخلاب وتفاعلي. لقد
+                                    شاهدنا الكثير من الصور والوسائط التفاعلية التي
+                                </p>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 2 -->
+    <div class="section2">
+        <div class="container-fluid">
+            <h3>
+                <a href='#'>
+                    أخبار عالسريع
+                </a>
+            </h3>
+            <div class="dropdown-divider"></div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <a href='#'>
+                            <img class="card-img-top" src="img/cat.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <a href='#' style="color: black;">
+                                <h5 class="card-title">نتفلكس ستطلق 40 فيلمًا ومسلسلًا أنمي خلال 2021</h5>
+                            </a>
+                            <h6 class="card-subtitle mb-2 text-muted">2021/03/28</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <a href='#'>
+                            <img class="card-img-top" src="img/ita.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <a href='#' style="color: black;">
+                                <h5 class="card-title">تحرير ناقلة الحاويات إيفر جيفن العالقة في قناة السويس </h5>
+                            </a>
+                            <h6 class="card-subtitle mb-2 text-muted">2021/03/29</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <a href='#'>
+                            <img class="card-img-top" src="img/car.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <a href='#' style="color: black;">
+                                <h5 class="card-title">تأجيل عرض فيلم Black Adam الأول لدواين جونسون في دي سي، أعرف هنا
+                                    الموعد الجديد!
+                                </h5>
+                            </a>
+                            <h6 class="card-subtitle mb-2 text-muted">2021/03/29</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- section 3 -->
+    <div class="section3">
+        <div class="container">
+            <a href='#'>
+                <h3>
+                    مدونات ومساهمات
+                </h3>
+            </a>
+
+            <div class="row">
+                <div class='col-sm-12 col-lg-4'>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">فن الضجيج: حتى مثلنا العليا تطرق طبولاً فارغة!</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">طبعاً من السذاجة بمكان أن أخوض في الفائدة التي
+                                تجنيها المواقع الفضائحية والقنوات من وراء هكذا أخبار ومقابلات (جمهور، إعلانات، نقود،
+                                ترافيك).</h6>
+
+                            <ul class="section3-post">
+                                <li>
+                                    <h5 class="card-subtitle">
+                                        نجوى بيطار<br><small class="text-muted">مدير</small> </h5>
+                                </li>
+                                <li> <img src='img/11.jpg'></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-12 col-lg-4'>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">اطلق مدونة أولًا، ثم ابنِ شركة فـ”إمبراطورية”</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">عندما تبدأ، لا يهم ما تكتبه طالما بدأت. وأسهل
+                                طريقة للبدء هي الكتابة عن الأشياء التي تعنيك. هذا -بلا شك- أمرٌ عشوائي، وربما ستشعر ببعض
+                                الحرج.</h6>
+
+                            <ul class="section3-post">
+                                <li>
+                                    <h5 class="card-subtitle">
+
+                                        م. طارق الموصللي
+                                        <br><small class="text-muted">مدون</small>
+                                    </h5>
+                                </li>
+                                <li> <img src='img/ddddd.jpg'></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-12 col-lg-4'>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">الوعي النفسي: لماذا يجب أن تفهم نفسك؟</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">بدأ الأمر بقراءات في كتب عدة ثم محاضرات عثرت عليّ
+                                دون أن أسعى إليها، فقررت أن التجربة إذا لم تنجح فلن أخسر شيئًا.</h6>
+
+                            <ul class="section3-post">
+                                <li>
+                                    <h5 class="card-subtitle">
+
+                                        نادين عبد الحميد
+                                        <br><small class="text-muted">طالبه</small>
+                                    </h5>
+                                </li>
+                                <li> <img src='img/team1.jpg'></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section4 -->
+    <div class="section4">
+        <div class="container">
+            <a href='#'>
+                <h3>
+                    احدث المقالات
+                </h3>
+            </a>
+            <div class="row">
+                <div class='col-lg-4'>
+
+                </div>
+                <div class="col-lg-8">
+                    <div class=''>
+                        <div class='one-article'>
+                            <div class='content'>
+                                <a href='#'>
+                                    <h5 class="card-title">
+                                        هل عادت متاهه تشارلى كوفمان بصوره اخرى؟- the father مراجعه فيلم
+                                    </h5>
+                                    <small class="text-muted"> يراهن المخرج والكاتب المسرحى فلو ريان زيلthe father فى
+                                        فيلم </small>
+                                </a>
+                                <p>منذ ساعتين <i class="far fa-clock"></i>
+                                </p>
+                            </div>
+                            <div class="content-of-img">
+                                <a href='#'>
+                                    <img src='img/city.jpg'>
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="dropdown-divider"></div>
+        <div class="container">
+            <div class='row'>
+                <div class="col-sm-12 col-md-3">
+                    <p>ADVERTISE WITH US</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <p>الموسوعه</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <p>روابط</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <p>PRIVACY AND COOKIE POLICY</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <P>المنشورات الاحدث</P>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <P>التسجيل </P>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <img src='img/Logo.png'>
+                </div>
+            </div>
+
+            <!-- <ul>
+                <li>ADVERTISE WITH US</li>
+                <li>الموسوعه</li>
+                <li>روابط</li>
+                <li>PRIVACY AND COOKIE POLICY</li>
+                <li>المنشورات الاحدث</li>
+                <li>التسجيل</li>
+                <li> <img src='img/Logo.png'></li>
+            </ul> -->
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/all.min.js'></script>
+    <script src='js/custom.js'></script>
+</body>
+
+</html>
