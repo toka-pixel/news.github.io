@@ -7,9 +7,9 @@ nav{
     border-bottom: 1px solid #ccc;
 }
 nav img{
-    max-height: 50px;
+  max-height: 35px;
     width: auto;
-    margin: 5px 0;
+    margin: 18px 0;
     overflow: hidden;
 }
 nav ul{
@@ -140,22 +140,56 @@ nav ul{
     direction: rtl;
     outline: none;
   }
-  .content-search form span , .content-search form .fa-search{
+  .content-search form .cl , .content-search form .fa-search{
     color: #999;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 38px;
     line-height: 100px;
     font-weight: 900;
   }
-  @media(max-width:700px){
+  @media(max-width:774px){
     .content-search form input{
-      font-size: 28px;
+      font-size: 26px;
+    }
+    nav .face-twitter , nav .user{
+      display: none;
     }
   }
+
+  @media(max-width:492px){
+    .content-search form .cl , .content-search form .fa-search{
+    
+      font-size: 13px;
+    }
+
+    .content-search form input{
+   
+      font-size: 15px;
+      padding: 10px 10px;
+    
+    }
+
+   
+  }
+  @media(max-width:236px){
+    .content-search form input{
+ 
+      font-size: 13px;
+    }
+  }
+
+  @media(max-width:216px){
+    .content-search form input{
+ 
+      font-size: 9px;
+    }
+  }
+
+
  
 
 
-  /* section 1 */
+  /********************* section 1 ********************/
   .section1{
     padding-top: 111px;
   }
@@ -257,7 +291,7 @@ nav ul{
   }
 
 
-  /* section 3 */
+  /****************** section 3 ***********/
   .section3{
     text-align: right;
     padding-top: 44px;
@@ -271,15 +305,14 @@ nav ul{
     letter-spacing: 0.5px;
     color:black
   }
-  /* .section3-post{
-    display: flex;
-  } */
+  
   .section3 .card{
     border-style: double;
     border-width: 5px 5px 5px 5px;
-    margin: 21px 15px 0px 15px;
-    padding: 20px 35px 20px 35px;
-    height: 312px;
+    /* margin: 21px 15px 0px 15px; */
+    /* padding: 20px 35px 20px 35px; */
+    min-height: 312px;
+    margin-bottom: 16px;
   }
   .section3 .section3-post img{
     width: 55px;
@@ -294,9 +327,7 @@ nav ul{
     right: 63px;
     display: flex;
 }
-/* .section3 li:nth-of-type(2){
-  margin-left: 15px;
-} */
+
 .section3 li h5{
   font-size: 17px;
   color: rgb(0 0 0 / 50%);
@@ -304,7 +335,20 @@ nav ul{
   padding-right: 12px;
 }
 
-/* section 4 */
+@media(max-width:294px){
+  .section3 ul{
+    bottom: 28px;
+    right: 22px;
+  }
+}
+@media(max-width:232px){
+  .section3 ul{
+    bottom: -8px;
+    right: 18px;
+  }
+}
+
+/************************** section 4 ***********************/
 .section4{
   text-align: right;
   padding-top: 71px;
@@ -360,6 +404,9 @@ nav ul{
 }
 
 /* footer */
+footer{
+  margin-bottom: 28px;
+}
 footer ul{
   list-style: none;
   display: flex;

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>news</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href="css/bootstrap.css">
@@ -21,8 +21,8 @@
                     <div>
                         <ul class="nav-ul-left">
                             <li> <span id="opensearch" onclick='opensearch()' class="fas fa-search" style="cursor: pointer;"></span></li>
-                            <li> <a> <i class="fab fa-facebook-f icon"></i></a></li>
-                            <li> <a> <i class="fab fa-twitter icon"></i></a></li>
+                            <li class='face-twitter'> <a> <i class="fab fa-facebook-f icon"></i></a></li>
+                            <li class='face-twitter'> <a> <i class="fab fa-twitter icon"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="col-sm-4">
                     <div style="float: right;">
                         <ul class='nav-ul-right'>
-                            <li>
+                            <li class='user'>
                                 <i class="far fa-user"></i>
 
                             </li>
@@ -79,9 +79,9 @@
           <div class='row'>
             <div class='col-sm-12'>
                 <form>
-                    <span style="font-size: 36px;"  class="fas fa-search"></span>
+                    <span   class="fas fa-search"></span>
                       <input type='text' required placeholder="ابحث فى الموقع ...">
-                      <span  onclick="opensearch()" > &times</span>
+                      <span class='cl'  onclick="opensearch()" > &times</span>
                   </form>
             </div>
           </div>
