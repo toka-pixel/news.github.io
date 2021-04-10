@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>news</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href="css/bootstrap.css">
+    <link rel='stylesheet' href='css/all.min.css'>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel='stylesheet' href='css/aos.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="css/register.css">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="fixed-top">
+        <div class="container-fluid">
+            <div class='row'>
+                <div class="col-sm-4">
+                    <div>
+                        <ul class="nav-ul-left">
+                            <li> <span id="opensearch" onclick='opensearch()' class="fas fa-search"
+                                    style="cursor: pointer;"></span></li>
+                            <li class='face-twitter'> <a> <i class="fab fa-facebook-f icon"></i></a></li>
+                            <li class='face-twitter'> <a> <i class="fab fa-twitter icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div style="text-align: center;">
+                        <a href='#'>
+                            <img src='img/Logo.png'>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div style="float: right;">
+                        <ul class='nav-ul-right'>
+                            <li class='user'>
+                                <i class="far fa-user"></i>
+
+                            </li>
+                            <li>
+                                <span id='open' style="font-size:30px;cursor:pointer;display: block;"
+                                    onclick="openNav()"> &#9776</span>
+                                <span id='close' style="font-size:30px;cursor:pointer;display: none;"
+                                    onclick="openNav()"> &times</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <div class='links'>
+            <a class='accordion' href="#">المرأه</a>
+            <div class='panel'>
+                <a href='#'>لايف كوتش</a>
+                <a href='#'>موضه</a>
+                <a href="#">مطبخ واسره</a>
+                <a href='#'>تربيه اطفال</a>
+                <a href="#">مشكلات وزجيه</a>
+            </div>
+            <a href="all-nwes.html">رياضه</a>
+            <a href="#">فن و ثقافه</a>
+            <a href="#">اقتصاد و عملات</a>
+            <a href='#'>علوم وتكنولوجيا</a>
+            <a href="#">فديو</a>
+        </div>
+    </div>
+
+    <!-- content-search -->
+    <div id='open-search-content' class="content-search">
+        <div class="container">
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <form>
+                        <span class="fas fa-search"></span>
+                        <input type='text' required placeholder="ابحث فى الموقع ...">
+                        <span class='cl' onclick="opensearch()"> &times</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------- content ------------->
+    <div class="register">
+        <div class="container">
+            <form>
+                <h1>أحلى ما عندنا واصل لعندك!</h1>
+                <div class="form-group">
+                    <input type='text' class=' myInput' placeholder=" .......الاسم" onfocus="focusFunction(this)"
+                        onblur="blurFunction(this)" required>
+                </div>
+                <div class="form-group">
+                    <input type='email' class="myInput" placeholder=" .......الايميل" onfocus="focusFunction(this)"
+                        onblur="blurFunction(this)" required>
+                </div>
+                <div class="form-group">
+                    <input type='text' class=" myInput " placeholder=" .........رقم الهاتف"
+                        onfocus="focusFunction(this)" onblur="blurFunction(this)" onblur="blurFunction()" required>
+                </div>
+                <div class="form-group">
+                    <input type='text' class=" myInput " placeholder=" .........الاقامه" onfocus="focusFunction(this)"
+                        onblur="blurFunction(this)" onblur="blurFunction()" required>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">ذكر</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">انثى</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea>
+                         .......... الرساله
+                    </textarea>
+                </div>
+
+
+                <button type="submit" class="btn btn-warning mb-2">ارسال</button>
+                <!-- <div class="form-group">
+                <label for="exampleFormControlFile1">Example file input</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div> -->
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+
+        <div class="container">
+            <div class='row'>
+                <div class="col-sm-12 col-md-3">
+                    <p>ADVERTISE WITH US</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <p>الموسوعه</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <p>روابط</p>
+                </div>
+                <!-- <div class="col-sm-12 col-md-3 col-lg-3">
+                    <p  style='cursor: pointer;' id='privacy-content' onclick="privacyContent()">PRIVACY AND COOKIE POLICY</p>
+                </div> -->
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <P>المنشورات الاحدث</P>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <P>التسجيل </P>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <img src='img/Logo.png'>
+                </div>
+            </div>
+
+            <!-- <ul>
+                <li>ADVERTISE WITH US</li>
+                <li>الموسوعه</li>
+                <li>روابط</li>
+                <li>PRIVACY AND COOKIE POLICY</li>
+                <li>المنشورات الاحدث</li>
+                <li>التسجيل</li>
+                <li> <img src='img/Logo.png'></li>
+            </ul> -->
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/bootstrap.bundle.js'></script>
+    <script src='js/all.min.js'></script>
+    <script src='js/custom.js'></script>
+    <script src='js/aos.js'></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

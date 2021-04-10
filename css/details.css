@@ -1,0 +1,45 @@
+.details{
+    direction: rtl;
+    padding-top: 111px;
+    text-align: justify;
+}
+.details h1{
+    font-size: 37px;
+ 
+    color: #2c0965f7;
+    /* font-family: 'Noto Kufi Arabic', sans-serif; */
+    font-family: 'Almarai', sans-serif;
+ 
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+.details img{
+    width: inherit;
+    height: 300px;
+    margin-bottom: 39px;
+}
+.details .time {
+    margin-top: 16px;
+    color: #6c757dc7;
+}
+.details .meta-data {
+    color:#383d41bf;
+}
+.details .meta-data a{
+    color:#383d41bf;
+    font-weight: bold;
+}
+.details small{
+    margin-right: 5px;
+}
+.details .content{
+    background-color: #3578e524;;
+}
+.details .details-of-content{
+    background: white;
+    padding: 0px 44px;
+    font-size: 20px;
+    font-weight: 300;
+   
+}
