@@ -2,23 +2,23 @@
     padding-top: 133px;
     text-align: center;
 }
-h1{
+.register h1{
     padding-bottom: 38px;
 }
-textarea,input{
+.register textarea,.register input{
     text-align: right !important;
     width: 38% ;
     padding: 10px 32px !important;
 }
 
-button{
+.register button{
     width: 38%;
     padding: 10px 32px !important;
 
 
 }
 @media (max-width:967px){
-    textarea,input,button{
+    .register textarea,.register input,.register button{
         width: 100%;
     }
 }

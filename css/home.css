@@ -11,10 +11,13 @@ nav{
     border-bottom: 1px solid #ccc;
 }
 nav img{
-  max-height: 35px;
+  /* max-height: 35px;
     width: auto;
-    margin: 18px 0;
+    margin: 18px 0; */
     overflow: hidden;
+    height: 80px;
+    width: auto;
+    margin: 5px 0px;
 }
 nav ul{
     list-style: none;
@@ -23,9 +26,13 @@ nav ul{
     margin: 0;
     color: #929292;
 }
+nav .behind-user{
+  float: right;
+  padding: 9px 0px;
+}
 .nav-ul-right li:nth-of-type(1){
     
-    /* background: #e9ecef; */
+    
     font-size: 22px;
     padding: 19px 27px;
 
@@ -39,7 +46,7 @@ nav ul{
     padding: 8px 17px;
 }
 .nav-ul-left{
-    padding: 16px 27px;
+    padding: 27px 27px;
     font-size: 22px;
 }
 .nav-ul-left li{
@@ -63,8 +70,7 @@ nav ul{
     z-index: 2;
     top: 0;
     right: 0;
-    /* background:url('../img/car.jpg'); */
-    /* background: rgba(247,247,247,.9); */
+
     background-image: linear-gradient( 148deg,#000,#300c2a);
     background-size: cover;
     overflow-x: hidden;
@@ -76,7 +82,7 @@ nav ul{
   .sidenav a {
     padding: 8px 8px 8px 32px;
     font-size: 25px;
-    /* color: #212529; */
+   
     color:white;
     font-weight: bold;
     display: block;
@@ -95,7 +101,7 @@ nav ul{
     color: white;
   }
   .sidenav .panel a{
-     /* color:#007bff;; */
+    
      color:#ffc107;
     
   }
@@ -113,7 +119,7 @@ nav ul{
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 100px;}
-    /* .sidenav a {font-size: 18px;} */
+  
   }
 
 
@@ -198,9 +204,6 @@ nav ul{
     position: relative;
   }
   .section1 article{
-   
-    /* background-color: #9FA2A9; */  
-    /* background-color: #f23026; */
     background-color:#ffc107;;
     padding: 9px 31px;
 
@@ -211,8 +214,7 @@ nav ul{
     
   }
   .section1 h3 a{
-    /* color: #7CFFDA; */
-    /* color: #495057; */
+   
     color: #000000a1;
    
     line-height: 1.5em;
@@ -229,7 +231,7 @@ nav ul{
   }
   .section1 h3{
     text-align: center;
-    /* font-family: "Droid Arabic Kufi", Sans-serif; */
+
     font-size: 30px;
     font-weight: 900;
     font-style: italic;
@@ -268,7 +270,7 @@ nav ul{
   /***************************** section 2 *********************/
   .section2 h3{
     text-align: center;
-    /* font-family: "Droid Arabic Kufi", Sans-serif; */
+
     font-size: 31px;
     font-weight: 900;
     line-height: 1.8em;
@@ -277,12 +279,10 @@ nav ul{
   }
  .section2 h3 a{
 
-    /* color: #28a745;; */
    color:white
  }
   .section2{
-    /* background-color: #EEEEEE; */
-    /* background-color: black; */
+ 
     background-image: linear-gradient(129deg,#000,#300c2a);
     padding-top: 30px;
     margin-top: 60px;
@@ -317,7 +317,7 @@ nav ul{
   }
   .section3 h3{
     text-align: right;
-    /* font-family: "Droid Arabic Kufi", Sans-serif; */
+    
     font-size: 28px;
     font-weight: 900;
     line-height: 1.8em;
@@ -329,8 +329,7 @@ nav ul{
   .section3 .card{
     border-style: double;
     border-width: 5px 5px 5px 5px;
-    /* margin: 21px 15px 0px 15px; */
-    /* padding: 20px 35px 20px 35px; */
+    
     min-height: 312px;
     margin-bottom: 16px;
   }
@@ -376,7 +375,7 @@ nav ul{
 .section4 h3{
 
     text-align: right;
-    /* font-family: "Droid Arabic Kufi", Sans-serif; */
+   
     font-size: 28px;
     font-weight: 900;
     line-height: 1.8em;
@@ -385,20 +384,17 @@ nav ul{
   
 }
 .section4 .one-article{
-    display: flex;
+    
     overflow: hidden;
     transition: all 0.5s ease-in-out;
     padding-bottom: 33px;
 }
-/* .section4 .one-article:hover{
-  box-shadow: -1px 9px 20px #6c757d38
-} */
+
 .section4 .content-of-img{
-  /* overflow: hidden;
-  position: relative;
-  width: 90%; */
+ 
   height: fit-content;
-    max-width: 400px;
+
+    max-width: 100%;
   padding-left: 20px;
 }
 .section4 .text-muted {
@@ -409,8 +405,16 @@ nav ul{
 .section4 img{
   transition: all 0.3s ease-in-out;
 
-  width: 294px;
-  height: 91%;
+ 
+  height: 189px;
+  width: 55%;
+  
+}
+@media(max-width:980px){
+  .section4 img{
+    width: 100%;
+
+  }
 }
 
 .section4 a{
@@ -422,6 +426,7 @@ nav ul{
   font-size: 23px;
     font-weight: 900;
     transition:  all 0.3s ease-in-out;
+    padding-top: 24px;
 }
 .section4 h5:hover{
   transform: translateX(-10px);
@@ -522,9 +527,7 @@ nav ul{
   .above-footer .flip-card {
     background-color: transparent;
     height: 200px;
-    /* width: 300px;
-    border: 1px solid #f1f1f1; */
-    perspective: 1000px; 
+   
   
 }
 .above-footer .flip-card-inner {
@@ -565,6 +568,7 @@ nav ul{
   font-size: 18px;
   position: absolute;
   top: 39%;
+  width: 100%;
 }
 .above-footer .card2 .flip-card-back h3{
   font-size: 18px;
@@ -576,100 +580,6 @@ padding: 0px 1px;
 
 
 }
-@media(max-width:1072px){
-  .above-footer .card2 .flip-card-back h3{
-    font-size: 16px;
-  }
-}
-@media(max-width:938px){
-  .above-footer .card2 .flip-card-back h3{
-    top: 9%;  
-    }
-}
-
-@media(max-width:858px){
-  .above-footer .card2 .flip-card-back h3{
-    top: 7%;
-    font-size: 15px;
-    }
-}
-@media(max-width:766px){
-  .above-footer .card2 .flip-card-back h3{
-    top: 18%;
-    font-size: 18px;
-    }
-}
-@media(max-width:650px){
-  .above-footer .card2 .flip-card-back h3{
-    top: 13%;
-    }
-}
-@media(max-width:572px){
-  .above-footer .card2 .flip-card-back h3{
-    top: 9%;
-    }
-}
-
-@media(max-width:526px){
-  .above-footer .card2 .flip-card-back h3{
-    top: 7%;
-    font-size: 17px;
-    }
-}
-@media(max-width:454px){
-  .above-footer .card2 .flip-card-back h3{
-    top: 13%;
-    font-size: 15px;
-    }
-}
-@media(max-width:410px){
-  .above-footer .card2 .flip-card-back h3{
-  top: 9%;
-    font-size: 15px;
-}
-}
-@media(max-width:332px){
-  .above-footer .card2 .flip-card-back h3{
-  top: 9%;
-    font-size: 14px;
-  }
-}
-@media(max-width:376px){
-  .above-footer .card2 .flip-card-back h3{
-    font-size: 14px;
-    }
-}
-@media(max-width:318px){
-  .above-footer .card2 .flip-card-back h3{
-    font-size: 13px;
-    }
-}
-@media(max-width:278px)
-{
-  .above-footer .card2 .flip-card-back h3{
-    font-size: 12px;
-    }
-}
-@media(max-width:242px){
-  .above-footer .card2 .flip-card-back h3{
-    font-size: 11px;
-    }
-}
-@media(max-width:212px){
-  .above-footer .card2 .flip-card-back h3{
-    font-size: 10px;
-    }
-}
-@media(max-width:610px){
-  .above-footer .card2 .flip-card-back h3{
-  font-size: 15px;
-  position: absolute;
-  top: 5%;
-  padding: 0px 1px;
-  }
-}
-
-
 
 
 
@@ -691,7 +601,7 @@ footer li{
   padding-right: 34px;
 }
 footer img {
-  width: 40%;
+  width: 15%;
 }
 footer p{
   transition: all 0.3s ease-in-out;
@@ -700,3 +610,11 @@ footer p{
 footer p:hover{
   transform: scale(1.1);
 }
+
+
+
+/* ****************** latest page */
+.latest-page{
+  padding-top: 51px;
+}
+

@@ -47,14 +47,11 @@ function privacyContent(){
 
 // ///////////////// input ///////////////////
 function focusFunction(x) {
-  // Focus = Changes the background color of input to yellow
+
 x.style.border = "1px solid #ffc107";
 }
 
-function blurFunction(x) {
-  // No focus = Changes the background color of input to red
-//  x.style.border = "1px solid rgb(118, 118, 118)";
-}
+
 
 
 
@@ -67,7 +64,7 @@ $(document).ready(function () {
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-      // this.classList.toggle("active");
+    
       var panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
